@@ -31,20 +31,22 @@ Associados: Array,
 Capitulos: Array
 })
 
-const db = []
 
 Routes.get('/Solos',async (req, res) => {
+    const db = []
     db.push(Solos)
-
+    
     return res.json(db)
 })
 Routes.get('/Series',async (req, res) => {
+    const db = []
     db.push(Series)
-
+    
     return res.json(db)
 })
 
 Routes.get('/', async (req, res) => {
+    const db = []
     db.push(Solos,Series)
     return res.json(db)
 })

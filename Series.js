@@ -108,5 +108,101 @@ const MR1 = new CSe('Menino Resilient I','MR1','Acompanhe a história do guardi�
     }
 }
 ])
-Series.push(MR1)
+
+const CONG = new CSe('Congregadores','CONG','Ciecon,um divertido e simples garoto,de repente se apossa de um poder enorme.Dedicado e astuto,ele decide que vai acabar com a injustiça e os males do universo.','UNIVERSAL','11/03/2023','Em andamento','Caio Henrique',['Sci-Fi','Ação','Drama','Universal'],'https://live.staticflickr.com/65535/52738545646_7a022dc471.jpg',['SE_RRH','SE_GUA'], [{
+    Nome: 'Selvagem',
+    Disponivel: true,
+    NumEps: 3,
+    DescCap: 'blablabla',
+    Episodios: {
+        Ep1: {
+            Nome: 'A Extinção',
+            Ref: '01.txt',
+            Numero: 1
+        },
+        Ep2: {
+            Nome: 'Uma Nova Amizade',
+            Ref: '02.txt',
+            Numero: 2
+        },
+        Ep3: {
+            Nome: 'O Futuro Incerto',
+            Ref: '03.txt',
+            Numero: 3
+        }
+    }
+},
+{
+    Nome: 'Tirania e Sobenaria',
+    Disponivel: true,
+    NumEps: 3,
+    DescCap: 'blablabla',
+    Episodios: {
+        Ep4: {
+            Nome: 'Escravidão',
+            Ref: '04.txt',
+            Numero: 4
+        },
+        Ep5: {
+            Nome: 'A Barbárie',
+            Ref: '05.txt',
+            Numero: 5
+        },
+        Ep6: {
+            Nome: 'Áurea',
+            Ref: '06.txt',
+            Numero: 6
+        }
+    }
+}
+])
+
+const GUA = new CSe('Guardiões','GUA','Beenie se muda da cidade com seus pais em busca de uma vida melhor e um futuro promissor. Porém nessa cidade,há coisas que eles nunca imaginariam que teriam que enfrentar.','TERRA','11/03/2023','Em Andamento','Caio Henrique',['Drama','Ação','Equipe','Terra'],'https://live.staticflickr.com/65535/52739030543_751119292d_n.jpg',['S_KER','SE_MR1'],[{
+    Nome: "Metamorfoses",
+    Disponivel: true,
+    NumEps: 3,
+    DescCap: "blablabla",
+    Episodios: {
+        Ep1: {
+            Nome: "Mudanças",
+            Ref: "01.txt",
+            Numero: 1,
+        },
+        Ep2: {
+            Nome: "Dificuldades",
+            Ref: "02.txt",
+            Numero: 2,
+        },
+        Ep3: {
+            Nome: "Poderes",
+            Ref: "03.txt",
+            Numero: 3,
+        },
+    },
+},
+{
+    Nome: "Apocalipse",
+    Disponivel: true,
+    NumEps: 3,
+    DescCap: "blablabla",
+    Episodios: {
+        Ep4: {
+            Nome: "Más Sensações",
+            Ref: "04.txt",
+            Numero: 4,
+        },
+        Ep5: {
+            Nome: "Lutas Mentais",
+            Ref: "05.txt",
+            Numero: 5,
+        },
+        Ep6: {
+            Nome: "O Apocalipse",
+            Ref: "06.txt",
+            Numero: 6,
+        },
+    },
+},
+])
+Series.push(MR1,CONG,GUA)
 module.exports = Series

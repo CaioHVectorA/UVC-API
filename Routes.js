@@ -1,6 +1,7 @@
 const express = require('express')
 const Routes = express.Router()
 const mongoose = require('mongoose')
+const Chars = require('./Chars')
 const Series = require('./Series')
 const Solos = require('./Solos')
 mongoose.model('Solo', {
@@ -90,6 +91,12 @@ Routes.get('/Series/:REF/Cap',async (req, res) => {
 Routes.get('/', async (req, res) => {
     const db = []
     db.push(Solos,Series)
+    return res.json(db)
+})
+
+Routes.get('/Chars',async (req, res) => {
+    const db = []
+    db.push(Chars)
     return res.json(db)
 })
 module.exports = Routes

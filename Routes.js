@@ -95,8 +95,6 @@ Routes.get('/', async (req, res) => {
 })
 
 Routes.get('/Chars',async (req, res) => {
-    const db = []
-    db.push(Chars)
-    return res.json(db)
+    return res.json(chars)
 })
 module.exports = Routes

@@ -89,8 +89,8 @@ Routes.get('/Series/:REF/Cap',async (req, res) => {
 //     return res.json(db[0].Capitulos)
 // })
 Routes.get('/', async (req, res) => {
-    const db = []
-    db.push(Solos,Series)
+    const db = Solos.concat(Series)
+    // db.push(Solos,Series)
     return res.json(db)
 })
 
